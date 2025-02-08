@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title> Eatsy </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+  <div style="opacity: 1;">
+    <div>
+      <div class="background-sky app">
+        <!--INTRO SECTION-->
+        <section id="intro">
+          <!--LOGO-->
+          <div class="app-logo" style="margin-right: -60px;">
+            <img src="assets/Right_panel_img.jpg" alt="Eatsy" width="110%" height="100%" style="box-shadow: 0 0 8px #1b1e79; 
+            width:110%; margin-top: 35px; padding-bottom: 35px;">
+          </div>
+          <!--CONTAINER-->
+          <div class="homepage-container">
+
+            <div class="app-headline no-toc margin-to-md">Welcome to Eatsy<br>
+            <span style="color:white;
+            font-weight: bold;"></span>
+            </div>
+            <div class="app-headline-low no-toc">Get started with your great food experience.</div>
+
+            <div class="app-bullets no-toc" style="margin-left: 10px;"><u>Login</u></div>
+            <div class="app-bullets no-toc">
+              <ul style="list-style-type: disc;">
+                <form action="Login Page.html" style="border:1px solid #ccc">
+                <p>Fill this form to Login.</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <br><br>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                 <span class="action" tooltip="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters." placement="bottom" container="body" containerClass="tooltip-class">
+                 <i class="material-icons">info</i>
+                 </span>
+                 <br><br>
+
+                <button type="submit">Login</button>
+                <br><br>
+
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <br><br>
+              </div>
+            
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <br><br>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+
+            
+            <div id="initiateBtnHolder" class="action-bar float right">
+              <div class="padding-bottom-sm" style="border-radius: 30px;">
+                <div class="action app-action pl-2" style="border-radius: 30px; cursor:pointer;"
+                routerLink="/dashboard">
+              <div class="icon float right">
+                <i class="material-icons">exit_to_app</i>
+              </div>
+              <label class="float-right" style="border-radius: 30px; cursor: pointer; margin-left: 15px; margin-right: 15px;">Click here to Login</label>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>

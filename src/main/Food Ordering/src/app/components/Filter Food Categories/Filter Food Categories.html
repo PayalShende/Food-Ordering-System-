@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatsy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Food Delivery Logo" class="logo-img">
+    </div>
+
+    <!-- menu.html -->
+<button class="btn btn-primary" onclick="addToCart(itemId)">Add to Cart</button>
+    <!-- menu.html -->
+<div>
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="appetizers">Appetizers</option>
+      <option value="main">Main Course</option>
+      <option value="desserts">Desserts</option>
+      <option value="snacks">Snacks</option>
+    </select>
+  
+    <div id="menu-items">
+      <!-- Dynamic menu items will be populated here -->
+        <ul>
+          <li><a href="#main-course">Main Course</a></li>
+          <li>Paneer Butter Masala</li>
+          <li>Mix-Veg</li>
+          <li>Chana Masala</li>
+          <li>Achari Bhindi</li>
+          <li>Rajma Masala</li>
+          <li>Daal Tadka</li>
+          <li>Daal Makhani</li>
+          <li>Special Thali</li>
+          <li>Mini Thali</li>
+          <li>Tandoori Chicken</li>
+          <li>Mutton Curry</li>
+          <li>Keema Cuury</li>
+          <li>Button Chicken</li>
+          <li>Chicken Tikka Masala</li>
+        </li>
+          <li><a href="#naan">Naan</a>
+            <!-- Submenu under 'Services' --> 
+            <li>Plain Naan</li>
+            <li>Garlic Naan</li>
+            <li>Butter Garlic Naan</li>
+            <li>Kulcha Naan</li>
+            <li>Butter Naan</li>
+            <li>Roti</li>
+            <li>Butter Roti</li>
+          </li>   
+          <li><a href="#rice">Rice</a>
+            <!-- Submenu under 'Services' --> 
+            <li>Plain Rice</li>
+            <li>Garlic Rice</li>
+            <li>Jeera Rice</li>
+            <li>Lemon Rice</li>
+            <li>Curd Rice</li>
+            <li>Veg Biryani</li>
+            <li>Chicken Biryani</li>
+            <li>Mutton Biryani</li>
+          </li> 
+        </ul>  
+        <ul>
+              <li><a href="#appetizers">Appetizers</a>
+              <li>Sweet Corn Vgetable Soup</li>
+              <li>Munchow Soup</li>
+              <li>Cream of Tomato</li>
+              <li>Chicken Noodle Soup</li>
+              <li>Chicken Vegetable Soup</li>
+              <li>Cream of Mushroom Soup</li>
+              <li>Masala Papad</li>
+              <li>Paani Puri</li>
+              <li>Aloo Chaat</li>
+              <li>Punjabi Samosa</li>
+              <li>Papadi Chaat</li>
+              <li>Sev Puri</li>
+              </li> 
+        </ul>
+        <ul>
+            <li><a href="#desserts">Desserts</a>
+            <li>Gulab Jamun</li>
+            <li>Jalebi</li>
+            <li>Rasgulla</li>
+            <li>Puran Poli</li>
+            <li>Modak</li>
+            <li>Shrikhand</li>
+            <li>Rajbhog</li>
+            <li>Cham Cham</li>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#snacks">Snacks</a>
+            <li><a href="#pizza">Pizza</a>
+            <li>Margherita Pizza</li>
+            <li>Double Cheese Margherita Pizza</li>
+            <li>Farmhouse Pizza</li>
+            <li>Peppy Paneer Pizza</li>
+            <li>Deluxe Veggie Pizza</li>
+            <li>Cheese n Corn Pizza</li>
+            <li>Veg Extravaganza Pizza</li>
+            <li>Fresh Veggie Pizza</li>
+            <li>Veggie Paradise Pizza</li>
+            <li>Paneer Makhani Pizza</li>
+            <li>Indi Tandoori Paneer Pizza</li>
+            <li>Chicken Golden Delight Pizza</li>
+            <li>Non Veg Supreme Pizza</li>
+            <li>Chicken Dominator Pizza</li>
+            <li>Pepper Barbeque & Onion Pizza</li>
+            <li>Pepper Barbeque Chicken Pizza</li>
+            <li>Chicken Sausage Pizza</li>
+            <li>Chicken Fiesta Pizza</li>
+            <li>Indi Chicken Tikka Pizza</li>
+            <li>Chicken Pepperoni Pizza</li>
+            </li>
+            <li><a href="#burgers">Burgers</a>
+            <li>Veggie burger</li>
+            <li>Aloo Tikki</li>
+            <li>Chicken burger</li>
+            <li>Indian Paneer </li>
+            <li>Indian Tandoori</li>
+            <li>Chicken Krisper Burgers</li>
+            <li>Chicken Maharaja</li>
+            <li>American Cheese Supreme Chicken</li>
+            </li> 
+            <li><a href="#sandwich">Sandwich</a>
+                <li>Bombay Sandwich</li>
+                <li>Paneer Tikka Sandwich</li>
+                <li>Masala Toast Sandwich</li>
+                <li>Chutney Cheese Sandwich</li>
+                <li>Aloo Sandwich</li>
+                <li>Chicken Sandwich</li>
+                <li>Egg Sandwich</li>
+                <li>Veg club Sandwich</li>
+                <li>Corn sandwich</li>
+            </li> 
+            <li><a href="#fries">Fries</a>
+                <li>Extra Hot & Spicy Fries</li>
+                <li>French Fries</li>
+                <li>Masala Fries</li>
+                <li>Peri Peri Fries</li>
+            </li>
+          </ul>   
+          <ul>  
+            <li><a href="#beverages">Beverages</a>
+                <li>Pina Colada</li>
+                <li>Virgin Mojito</li>
+                <li>Blue Lagoon</li>
+                <li>Lassi</li>
+                <li>Tea</li>
+                <li>Ginger Tea</li>
+                <li>Masala Tea</li>
+                <li>Cappuccino</li>
+                <li>Hot Chocolate</li>
+                <li>Americano</li>
+                <li>Espresso</li>
+                <li>Latte</li>
+                <li>Coke</li>
+                <li>Iced Tea</li>
+                <li>Sprite</li>
+                <li>Pepsi</li>
+                <li>Fanta</li>
+                <li>Mountain Dew</li>
+                <li>Mazza</li>
+                <li>Appy Fizz</li>
+            </li> 
+        </ul>  
+    </div>
+  </div>  
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-links">
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </div>
+    <div class="social-links">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2025 Food Delivery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
